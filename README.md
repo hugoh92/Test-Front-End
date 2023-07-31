@@ -1,6 +1,7 @@
 # DevTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.0.
+The test is hosted at the link https://hugo-teste-front.netlify.app/
 
 ## Project Structure
 
