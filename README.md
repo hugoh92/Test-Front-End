@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.0.
 
+## Project Structure
+
+The test files 1 to 4 are located in the folders Test-Front-End/src/app/. Each test is implemented as an Angular component, with its own HTML, CSS, and TypeScript files. Each component is invoked by the tab-menu component, which serves as a tabbed menu, where each tab represents a test. Additionally, the project includes the global HTML and CSS files, located in the root folder.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
