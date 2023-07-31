@@ -17,7 +17,7 @@ interface WeatherData { //interface data
   styleUrls: ['./test-three.component.css']
 })
 export class TestThreeComponent implements OnInit {
-  cityName: string = 'London';
+  cityName: string = 'Paris';
   weatherData: WeatherData | null = null;
   weatherIcon: string = '';
   constructor(private http: HttpClient) { }
