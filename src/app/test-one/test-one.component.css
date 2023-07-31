@@ -1,0 +1,16 @@
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* set color button */
+.button-change {
+    background-color: #1D95C9;
+}
+
+
+@media (max-width: 528px) {
+    .button-change {
+        width: 280px;
+    }
+}

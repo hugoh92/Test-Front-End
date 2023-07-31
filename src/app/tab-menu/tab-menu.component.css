@@ -1,0 +1,35 @@
+.tab-menu {
+    display: flex;
+    background-color: #f1f1f1;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: inherit;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-button:focus,
+.tab-button.active {
+    border-bottom: 3px solid #1D95C9;
+    /* Active tab border color */
+}

@@ -1,0 +1,21 @@
+<div class="title">
+    <h1> Consuming an API</h1>
+</div>
+<div class="menu-weather">
+    <label for="cityInput">Enter the name of the city:</label>
+    <input type="text" id="cityInput" [(ngModel)]="cityName">
+    <button class="buttons-style button-change" (click)="getWeather()">Apply</button>
+</div>
+
+<div class="menu-weather" *ngIf="!cityNotFound(); else notFound">
+    <h2>Current weather in {{ cityName }}</h2>
+    <p>Temperature: {{ weatherData?.temp }}°C</p>
+    <p>Description: {{ weatherData?.description }}</p>
+    <img [src]="'assets/icons/' + weatherIcon" alt="Ícone do Clima">
+</div>
+
+<ng-template #notFound>
+    <div class="menu-weather">
+        <p>City not found</p>
+    </div>
+</ng-template>
